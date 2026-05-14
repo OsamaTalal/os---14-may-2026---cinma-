@@ -145,17 +145,6 @@
     border-color: var(--color-border);
   }
 
-  /* Hide Lovable Badge */
-  #lovable-badge,
-  .lovable-badge,
-  div[id^="lovable"],
-  a[href^="https://lovable.dev/"] {
-    display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
-  }
-
   html {
     direction: rtl;
   }
@@ -171,26 +160,20 @@
     font-family: 'Cairo', system-ui, sans-serif;
     position: relative;
   }
-
   body::before {
     content: '';
     position: fixed;
     inset: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.78) 0%, rgba(5, 5, 15, 0.85) 60%, rgba(0, 0, 0, 0.92) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.78) 0%, rgba(5,5,15,0.85) 60%, rgba(0,0,0,0.92) 100%);
     pointer-events: none;
     z-index: 0;
   }
-
-  body>* {
-    position: relative;
-    z-index: 1;
-  }
+  body > * { position: relative; z-index: 1; }
 }
 
 @utility glow-netflix {
   box-shadow: 0 0 40px -8px oklch(0.6 0.25 25 / 0.55), 0 0 80px -20px oklch(0.6 0.25 25 / 0.3);
 }
-
 @utility glow-shahid {
   box-shadow: 0 0 40px -8px oklch(0.65 0.2 155 / 0.55), 0 0 80px -20px oklch(0.65 0.2 155 / 0.3);
 }

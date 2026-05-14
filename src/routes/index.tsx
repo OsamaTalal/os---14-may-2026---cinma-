@@ -71,8 +71,8 @@ function PlanCard({ plan }: { plan: Plan }) {
       rel="noopener noreferrer"
       className={`group flex items-center gap-2.5 rounded-2xl border bg-black/40 p-2 backdrop-blur-md transition-all duration-200 active:scale-[0.98] hover:bg-black/55 ${glow}`}
       onClick={() => {
-        if (typeof window !== 'undefined' && (window as any).ttq) {
-          (window as any).ttq.track('InitiateCheckout');
+        if (typeof window !== "undefined" && (window as any).ttq) {
+          (window as any).ttq.track("InitiateCheckout");
         }
       }}
     >
